@@ -25,6 +25,10 @@ header {
   background-position: center;
   height: 100vh;
   min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 header .intro-text p, header .intro-text h1 {
@@ -59,7 +63,12 @@ header .intro-text .btn-intro {
 
 /* Main */
 main {
+  padding: 100px 15%;
   color: #333;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  text-align: center;
 }
 
 main .service .circle-icon {
@@ -67,11 +76,21 @@ main .service .circle-icon {
   color: #fff;
 }
 
+.service-description{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
 main .service-description  h1 {
+  text-align: center;
+  margin: 39px 0px;
   font-size: 3em;
 }
 
 main .service-description  p {
+  margin: 16px 0px;
   color: #777;
   font-style: italic;
 }
@@ -82,16 +101,96 @@ main .service p {
   line-height: 1.75;
 }
 
+main .service {
+  flex-basis: calc(100% / 3);
+}
+
+
+
+.circle-icon {
+  background-color: #fed136;
+  color: #fff;
+  width: 6em;
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+}
+.fa{
+  font-size: 3em;
+}
+
 /* footer */
 footer {
   background-color: #ecece2;
 }
 
+.footer-content{
+  display: flex;
+  text-align: center;
+  padding:  40px 15% 60px;
+}
+
+.about{
+  flex-basis: calc(100% / 3);
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-content > section {
+  flex-basis: calc(100% / 3);
+}
+
+.fa {
+  font-size: 3em;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
 footer section.social a {
+  margin: 15px;
   color: #555;
+  border: 3px solid #555;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
+
+li .fa.fa{
+  font: normal normal normal 14px / 1 FontAwesome;;
+}
+
+.fa-heart {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 footer section.copyright {
+  padding: 15px;
+  text-align: center;
   color: #555;
   background-color: #c7c7af;
 }
